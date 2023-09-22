@@ -2,7 +2,7 @@
 Adam Ben Ahmed Belachi
 22/09/2023
 MO3 UF1 A1
-El programa ens diu, en el cas de ser majors d'edat, que ho som.
+El programa diu, en el cas de ser majors d'edat, que ho som.
 """
 edat = int(input("Quina edat tens?"))
 
