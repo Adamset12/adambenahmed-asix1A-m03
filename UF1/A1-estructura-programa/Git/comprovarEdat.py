@@ -2,11 +2,8 @@
 Adam Ben Ahmed Belachi
 22/09/2023
 MO3 UF1 A1
-El programa
+El programa ens diu, en el cas de ser majors d'edat, que ho som.
 """
-
-# Programa que demana l'edat i diu si ets major d'edat.
-
 edat=int(input("Quina edat tens?"))
 
 if edat>=18:
