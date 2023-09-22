@@ -4,8 +4,8 @@ Adam Ben Ahmed Belachi
 MO3 UF1 A1
 El programa ens diu, en el cas de ser majors d'edat, que ho som.
 """
-edat=int(input("Quina edat tens?"))
+edat = int(input("Quina edat tens?"))
 
-if edat>=18:
+if edat >= 18:
     print("Ets major d'edat")
 print("Programa Finalitzat")
