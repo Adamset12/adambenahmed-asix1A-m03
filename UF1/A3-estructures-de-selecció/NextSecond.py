@@ -1,3 +1,8 @@
+"""
+Adam Ben Ahmed Belachi
+23/10/2023
+MO3 UF1 A3
+"""
 try:
     hora = input().split()
     hora[2] = int(hora[2]) + 1

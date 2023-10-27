@@ -37,4 +37,4 @@ try:
             elif efectivo[i] > 1: print(str(efectivo[i]) + " monedes de " + str(values[i]) + " cèntims")
             else: print(str(efectivo[i]) + " moneda de " + str(values[i]) + " cèntims")
         i += 1
-except ValueError or IndexError: print("Pon un valor vàlido")
+except: print("Pon un valor vàlido")

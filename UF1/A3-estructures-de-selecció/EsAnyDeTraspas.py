@@ -1,3 +1,8 @@
+"""
+Adam Ben Ahmed Belachi
+23/10/2023
+MO3 UF1 A3
+"""
 try:
     any = int(input("Any a tractar: "))
 
