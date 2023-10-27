@@ -5,10 +5,6 @@ MO3 UF1 A3
 """
 try:
     ppplcookies = input().split()
-
-    if int(ppplcookies[1]) / int(ppplcookies[0]) != (int(ppplcookies[1]) // int(ppplcookies[0])):
-        print("Let's Fight")
-    else:
-        print("Let's Eat!")
-except:
-    print("Input inválido")
+    if (int(ppplcookies[1]) % int(ppplcookies[0])) != 0: print("Let's Fight")
+    else: print("Let's Eat!")
+except: print("Input inválido")
