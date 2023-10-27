@@ -4,25 +4,11 @@ try:
     money = input()
     i = 0
     while i < len(money) and money[i] != ".": i += 1
-    if float(money) % pow(10, i-1) > 99: exit(1)
-    money = decimal.Decimal(money)
-    values = [
-        decimal.Decimal('500'),
-        decimal.Decimal('200'),
-        decimal.Decimal('100'),
-        decimal.Decimal('50'),
-        decimal.Decimal('20'),
-        decimal.Decimal('10'),
-        decimal.Decimal('5'),
-        decimal.Decimal('2'),
-        decimal.Decimal('1'),
-        decimal.Decimal('0.50'),
-        decimal.Decimal('0.20'),
-        decimal.Decimal('0.10'),
-        decimal.Decimal('0.05'),
-        decimal.Decimal('0.02'),
-        decimal.Decimal('0.01')
-    ]
+    aux = money[0:i]
+    print(str(float(money) % int(aux)))
+    if len(str(float(money) % int(aux))) > 3: exit(1)
+    money = float(money)
+    values = [float('500'), float('200'), float('100'), float('50'), float('20'), float('10'), float('5'), float('2'), float('1'), float('0.50'), float('0.20'), float('0.10'), float('0.05'), float('0.02'), float('0.01')]
     efectivo = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     i = 0
     while i in range(len(values)):
