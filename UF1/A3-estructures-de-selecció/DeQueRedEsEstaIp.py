@@ -51,6 +51,6 @@ def formatipnettodecimal (binipnet):
     ipnet += str(binaryToDecimal(int(binipnet[24:32])))
     return(ipnet)
 try:
-    ip = input("Cual es la ip separada por ""."" y su mascara indicada con una / detras del último digito de la ip?\n-")
+    ip = input("Cual es la ip separada por ""."" y su mascara indicada con una / detras del último digito de la ip?\n- ")
     print(formatipnettodecimal(whatstheipnet(iptobinary(ip), whatsTheMask(ip))))
 except: print("Pon un valor válido.")

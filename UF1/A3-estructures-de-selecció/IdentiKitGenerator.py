@@ -7,24 +7,28 @@ cabells = input()
 ulls = input()
 nas = input()
 boca = input()
-
+dibuix = ""
+valid = True
 match cabells.lower():
-    case "arrissats": print("@@@@@")
-    case "llisos": print("VVVVV")
-    case "pentinats": print("XXXXX")
-    case _: print("Valor de cabells no vàlid")
+    case "arrissats": dibuix += "@@@@@\n"
+    case "llisos": dibuix += "VVVVV\n"
+    case "pentinats": dibuix += "XXXXX\n"
+    case _: valid = False
 match ulls.lower():
-    case "aclucats": print(".-.-.")
-    case "rodons": print(".o-o.")
-    case "estrellats": print(".*-*.")
-    case _: print("Valor de ulls no vàlid")
+    case "aclucats": dibuix += ".-.-.\n"
+    case "rodons": dibuix += ".o-o.\n"
+    case "estrellats": dibuix += ".*-*.\n"
+    case _: valid = False
 match nas.lower():
-    case "aixafat": print("..0..")
-    case "arromangat": print("..C..")
-    case "agilenc": print("..V..")
-    case _: print("Valor de nas no vàlid")
+    case "aixafat": dibuix += "..0..\n"
+    case "arromangat": dibuix += "..C..\n"
+    case "agilenc": dibuix += "..V..\n"
+    case _: valid = False
 match boca.lower():
-    case "normal": print(".===.")
-    case "bigoti": print(".∼∼∼.")
-    case "dents-sortides": print(".www.")
-    case _: print("Valor de boca no vàlid")
+    case "normal": dibuix += ".===."
+    case "bigoti": dibuix += ".∼∼∼."
+    case "dents-sortides": dibuix += ".www."
+    case _: valid = False
+if valid: print(dibuix)
+else: print("No dibuixable :-)")
+

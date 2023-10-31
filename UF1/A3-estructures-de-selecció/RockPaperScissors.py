@@ -9,4 +9,4 @@ try:
         if int(RPS[0]) == int(RPS[1]): print("Empat")
         elif int(RPS[0]) < int(RPS[1]): print("Guanya el segon")
         else: print("Guanya el primer")
-except ValueError or IndexError: print("Fica valors numérics vàlids")
+except: print("Fica valors vàlids")
