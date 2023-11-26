@@ -6,7 +6,7 @@ valid = False
 while not end:
     valid = True
     puntuació_aux = int(input())
-    if puntuació_aux == "" or puntuació_aux > puntuació:
+    if puntuació_aux > puntuació:
         puntuació = puntuació_aux
         nom = nom_aux
     nom_aux = input()
