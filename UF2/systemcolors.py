@@ -9,6 +9,10 @@
 # Per imprimir amb colors al terminal ----------
 # print('\x1b[6;30;42m' + 'Success!' + '\x1b[0m')
 
+CYAN = "\033[36m"
+RESET = "\033[0m"
+
+
 # region #Definició de colors ---
 CEND = '\33[0m'
 CBOLD = '\33[1m'
