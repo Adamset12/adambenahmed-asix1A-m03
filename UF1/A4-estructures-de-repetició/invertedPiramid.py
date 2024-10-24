@@ -1,11 +1,10 @@
 floors = int(input())
-aux = floors
-columns = 1
-for x in range(floors):
+aux = 0
+for x in range(floors,0,-1):
     for z in range(aux):
         print(end=" ")
-    for y in range(columns):
+    for y in range(floors):
         print("# ", end = "")
-    columns += 1
-    aux -= 1
+    aux += 1
+    floors -= 1
     print("\n", end = "")

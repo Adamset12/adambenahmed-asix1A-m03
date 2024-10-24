@@ -1,6 +1,6 @@
 import time
-nmbrs = ["un", "dos", "tres", "quatre", "cinc"]
-for x in range(1, 6):
-    print(nmbrs[x-1] + " Mississipí")
+nmbrs = ["un", "dos", "tres", "quatre", "cinc", "sis"]
+for x in nmbrs:
+    print(x + " Mississipí")
     time.sleep(1)
 print("\nLlest o no, alla vaig")
